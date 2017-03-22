@@ -1,7 +1,7 @@
 set :branch, 'master'
 
 # sidekiq-private
-server 'shirts-to-go.com',  user: 'ubuntu', roles: %w{dbweb app redis} # , my_property: :my_value
+server 'shirts-to-go.com',  user: 'ubuntu', roles: %w{db web app redis} # , my_property: :my_value
 
 # server-based syntax
 # ======================

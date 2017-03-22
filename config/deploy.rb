@@ -11,6 +11,12 @@ set :linked_files, %w{config/secrets.yml}
 
 after 'deploy:publishing', 'deploy:restart'
 
+namespace :deploy do
+  task :restart, :roles => :web do
+    run "mkdir #{current_path}/tmp"
+    run "touch #{ current_path }/tmp/restart.txt"
+  end
+end
 # set :linked_dirs, %w{solr}
 
 # Default branch is :master
