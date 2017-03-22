@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Hello from the Magic Tavern - Official Store</title>
+    <%= csrf_meta_tags %>
+
+        <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+            <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+      <link href="https://fonts.googleapis.com/css?family=Raleway:200,400,500,600,700" rel="stylesheet">
+</head>
+
+<body class="archive post-type-archive post-type-archive-product woocommerce woocommerce-page group-blog sticky-header body-desktop">
+    <div id="page" class="hfeed site">
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="https://hellofromthemagictavern.com/category/episodes/" target="_blank">Episodes</a></li>
+                        <li><a href="https://hellofromthemagictavern.com/shop/" target="_blank">Shop Posters</a></li>
+                        <li><a href="/" target="_blank">Shop Apparel</a></li>
+                        <li><a href="https://hellofromthemagictavern.com/live-episodes/" target="_blank">Live Shows</a></li>
+                        <li><a href="https://magictavern.wikidot.com" target="_blank">Wiki</a></li>
+                        <li><a href="https://hellofromthemagictavern.com/contact/" target="_blank">Contact</a></li>
+                        <li><a href="https://hellofromthemagictavern.com/" target="_blank">Home</a></li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container-fluid -->
+        </nav>
+
+        <div id="content" class="site-content">
+          <%= yield %>
+
+        </div>
+        <!-- #content -->
+
+        <footer id="colophon" class="site-footer" role="contentinfo">
+            <div class="footer-connect">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-2"></div>
+
+                        <div class="col-sm-8">
+                            <div class="footer-social">
+                                <h5 class="follow-heading">Follow Us</h5>
+                                <div class="footer-social-icons"><a target="_blank" href="https://twitter.com/magictavern" title="Twitter"><i class="fa fa-twitter"></i></a><a target="_blank" href="https://www.facebook.com/hellofromthemagictavern" title="Facebook"><i class="fa fa-facebook"></i></a><a target="_blank" href="https://soundcloud.com/hellofromthemagictavern" title="Soundcloud"><i class="fa fa-soundcloud"></i></a><a target="_blank" href="https://geo.itunes.apple.com/us/podcast/hello-from-the-magic-tavern/id975078285?mt=2" title="iTunes"><i class="fa fa-apple fa-itunes"></i></a><a target="_blank" href="http://feedpress.me/magictavern" title="rss"><i class="fa fa-rss"></i></a></div>
+                            </div>
+                        </div>
+                        <div class="col-sm-2"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="site-info">
+                <div class="container">
+                    <div class="btt">
+                        <a class="back-top-top" href="#page" title="Back To Top"><i class="fa fa-angle-double-up wow flash" data-wow-duration="2s" style="visibility: hidden; animation-duration: 2s; animation-name: none;"></i></a>
+                    </div>
+                    Copyright © 2017 Hello from the Magic Tavern <span class="sep"> – </span>
+                    <a href="https://www.famethemes.com/themes/onepress">OnePress</a> theme by FameThemes </div>
+            </div>
+            <!-- .site-info -->
+
+        </footer>
+        <!-- #colophon -->
+    </div>
+    <!-- #page -->
+</body>
+
+</html>
