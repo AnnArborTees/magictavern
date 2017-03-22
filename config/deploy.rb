@@ -8,6 +8,9 @@ set :rvm_task_ruby_version, 'ruby-2.4.0'
 set :deploy_to, '/home/ubuntu/RailsApps/partners/magictavern'
 
 set :linked_files, %w{config/secrets.yml}
+
+after 'deploy:publishing', 'deploy:restart'
+
 # set :linked_dirs, %w{solr}
 
 # Default branch is :master
