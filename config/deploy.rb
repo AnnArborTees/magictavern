@@ -1,8 +1,14 @@
 # config valid only for current version of Capistrano
 lock "3.8.0"
 
-set :application, "magic-tavern"
-set :repo_url, "git@example.com:me/my_repo.git"
+set :application, 'magic-tavern'
+set :repo_url, 'git@github.com:annarbortees/magictavern.git'
+set :rvm_ruby_version, 'ruby-2.4.0'
+set :rvm_task_ruby_version, 'ruby-2.4.0'
+set :deploy_to, '/home/ubuntu/RailsApps/partners/magictavern'
+
+set :linked_files, %w{config/secrets.yml}
+# set :linked_dirs, %w{solr}
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
